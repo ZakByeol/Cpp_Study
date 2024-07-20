@@ -17,6 +17,7 @@ class Animal
 // public: Anyone
 // protected: any class inside
 // private: this class inside
+// C#에서는 하나하나 입력해줘야함
 
 public:
     int legs;
