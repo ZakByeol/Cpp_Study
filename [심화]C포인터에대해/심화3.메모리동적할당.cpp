@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void pointer_array(){
 

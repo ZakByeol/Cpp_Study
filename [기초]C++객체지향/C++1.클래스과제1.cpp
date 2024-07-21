@@ -1,5 +1,4 @@
-#include "../0실행용파일/Header.h"
-
+#include "../Header.h"
 // Header 파일에
 // int number_counter = 1;
 // int getInt(const char* prompt);
@@ -10,28 +9,33 @@ class Management
 {
 public:
     int company_number;
-    char name[20];
+    char* name;
     int gender;
-    char company_rank[20];
+    char* company_rank;
 
     Management(char* name,int gender,char* company_rank)
     {
         this->company_number = number_counter;
         number_counter += 1;
-
-//        name = new char[strlen(name)+1];
+        this->name = new char[strlen(name)+1];
         strcpy(this->name, name);
-
         this->gender = gender;
-
-//        company_rank = new char[strlen(company_rank)+1];
+        this->company_rank = new char[strlen(company_rank)+1];
         strcpy(this->company_rank, company_rank);
+
 
 //        delete name;
 //        delete company_rank;
 //        해당 구문들은 동적할당을 하고, 삭제할시, 없어짐;;
 //        전의 학습파일에도 이렇게 했었는데, 그때도 뒤의 구문이 없었다면 사라지는거임.
 
+    }
+
+    ~Management()
+    {
+        delete[] name;
+        delete[] company_rank;
+        printf("사원 번호 %d의 정보가 삭제되었습니다.", company_number);
     }
 
     void getinfo(){
@@ -89,13 +93,13 @@ int main()
                     delete_Index = i;
                 }
                 // 뒷 번호를 앞 당기기
-            if (delete_Index>=0)
-            {
-                for (int j = delete_Index; j < count; ++j)
+                if (delete_Index>=0)
                 {
-                    employee[i] = employee[i + 1];
+                    for (int j = delete_Index; j < count; ++j)
+                    {
+                        employee[i] = employee[i + 1];
+                    }
                 }
-            }
 
             }
         }

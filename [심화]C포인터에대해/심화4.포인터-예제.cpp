@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void test1(){
     int* pointer = nullptr;

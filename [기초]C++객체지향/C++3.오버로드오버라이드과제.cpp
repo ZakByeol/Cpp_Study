@@ -1,7 +1,7 @@
 //
 // Created by 배건우 on 2024. 7. 14..
 //
-#include "Header.h"
+#include "../Header.h"
 
 class Matrix{
 public:

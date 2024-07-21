@@ -1,5 +1,4 @@
-#include "../0실행용파일/Header.h"
-
+#include "../Header.h"
 // Abstraction 추상화 함
 // 필요한 속성과 행동을 나누는 행위
 

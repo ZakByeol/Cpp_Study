@@ -10,7 +10,7 @@
 
 /* 사용자 정의 헤더 - #include "헤더파일 이름" */
 
-#include "Header.h"
+#include "../Header.h"
 
 int add(int value1, int value2);
 /* 함수의 원형으로, 밑에 있는 함수를 불러온다. ( 순서 무시 ) */

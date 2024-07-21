@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 //class Animal
 //{ // 오버라이드를 위한 클래스 작성

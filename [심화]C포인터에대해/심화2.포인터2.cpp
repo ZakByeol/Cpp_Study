@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void swap(int* a,int* b /*주소값을 파라미터로! */){
     int swap_value;

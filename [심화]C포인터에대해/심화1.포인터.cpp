@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 /* Cpp에서의 포인터 : C/Cpp는 변수명이 아닌, 주소값으로 */
 /* 변수를 구별한다. */
